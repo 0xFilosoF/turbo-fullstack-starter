@@ -102,11 +102,11 @@ npx prisma migrate dev
 If you need to push any existing migrations to the database, you can use either the Prisma db push or the Prisma migrate deploy command(s):
 
 ```bash
-yarn run prisma:push
+pnpm run prisma:push
 
 # OR
 
-yarn run prisma:migrate:deploy
+pnpm run prisma:migrate:deploy
 ```
 
 There is slight difference between the two commands & [Prisma offers a breakdown on which command is best to use](https://www.prisma.io/docs/concepts/components/prisma-migrate/db-push#choosing-db-push-or-prisma-migrate).
