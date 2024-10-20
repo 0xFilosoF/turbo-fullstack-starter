@@ -1,12 +1,12 @@
 {
   "name": "@repo/database",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "type": "module",
   "exports": {
     ".": "./src/client.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "dev": "tsup src/* --watch",
     "format": "prisma format",
     "generate": "prisma generate",
     "prisma:migrate:deploy": "prisma migrate deploy",

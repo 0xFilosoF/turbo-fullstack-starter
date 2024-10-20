@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "keepClassNames": true,
+    "preserveAllComments": true,
+    "target": "es2020",
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    }
+  },
+  "minify": false
+}

@@ -8,7 +8,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
   },
   env: {
-    node: true,
-    es6: true,
+    node: true
   },
 };

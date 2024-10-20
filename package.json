@@ -7,14 +7,15 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "build:backend": "turbo run build --filter=backend",
-    "build:web": "turbo run build --filter=web",
+    "clean": "turbo run clean",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prisma:migrate:deploy": "turbo run db:migrate:deploy",
-    "prisma:push": "turbo run db:push",
-    "generate": "turbo run generate"
+    "test": "turbo run test",
+    "generate": "turbo run generate",
+    "prisma:migrate:deploy": "turbo run prisma:migrate:deploy",
+    "prisma:migrate": "turbo run prisma:migrate",
+    "prisma:push": "turbo run prisma:push"
   },
   "dependencies": {
     "@prisma/client": "5.10.2"
