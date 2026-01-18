@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "app",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -19,8 +19,6 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
-    "@repo/common": "workspace:*",
-    "@repo/database": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
