@@ -26,10 +26,13 @@
     "noEmitHelpers": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["es2023"],
+    "outDir": "./dist",
+    "rootDir": ".",
     "types": ["node"],
     "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "Bundler"
+    "moduleResolution": "Bundler",
   },
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "tsup.config.ts"],
+  "exclude": ["dist", ".build", "node_modules"]
 }
