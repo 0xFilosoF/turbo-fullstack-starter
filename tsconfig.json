@@ -1,3 +1,35 @@
 {
-  "extends": "@repo/typescript-config/base.json"
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2023"],
+    "types": ["node"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "exclude": ["node_modules"]
 }
