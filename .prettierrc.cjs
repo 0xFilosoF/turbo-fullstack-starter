@@ -1,4 +1,18 @@
-/** @type {import("prettier").Config} */
+/**
+ * @see https://prettier.io/docs/en/configuration.html
+ * @type {import("prettier").Config}
+ */
 module.exports = {
-  ...require('@repo/eslint-config/prettier-base.js'),
+	printWidth: 100,
+	tabWidth: 2,
+	singleQuote: true,
+	trailingComma: "all",
+	overrides: [
+		{
+			files: ["**/*.jsonc"],
+			options: {
+				trailingComma: "none",
+			},
+		},
+	],
 };
