@@ -1,32 +1,32 @@
 {
   "name": "turbo-starter",
-  "version": "0.0.0",
-  "private": true,
-  "prisma": {
-    "schema": "packages/database/prisma/schema.prisma"
-  },
+  "version": "0.1.0",
   "scripts": {
-    "build": "turbo run build",
-    "clean": "turbo run clean",
-    "lint": "turbo run lint",
-    "dev": "turbo run dev",
+    "build": "tsdown",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit && eslint . --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "turbo run test",
-    "generate": "turbo run generate",
-    "prisma:migrate:deploy": "turbo run prisma:migrate:deploy",
-    "prisma:migrate": "turbo run prisma:migrate",
-    "prisma:push": "turbo run prisma:push"
-  },
-  "dependencies": {
-    "@prisma/client": "5.10.2"
+    "test": "jest"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@eslint/js": "^9.16.0",
+    "@swc/core": "^1.7.36",
+    "@swc/jest": "^0.2.36",
+    "@types/eslint": "^9.6.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.13.14",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^2.3.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.3.0",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
     "prettier": "^3.2.5",
-    "prisma": "5.10.2",
-    "tsx": "^4.7.1",
-    "turbo": "^2.2.1"
+    "ts-jest": "^29.2.5",
+    "tsdown": "^0.14.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.16.0"
   },
   "engines": {
     "node": ">=18"
